@@ -7,7 +7,7 @@ interface useCurrentStepIdStore {
   setCurrentStepId: (stepId: FormStepId) => void
 }
 
-export const useCurrentStepId = create<useCurrentStepIdStore>((set) => ({
+export const useCurrentStepId = create<useCurrentStepIdStore>((set: any) => ({
   currentStepId: 'WELCOME_PAGE',
-  setCurrentStepId: (stepId) => set({ currentStepId: stepId }),
+  setCurrentStepId: (stepId: any) => set({ currentStepId: stepId }),
 }))
