@@ -6,7 +6,7 @@ interface useProjectModalStore {
   closeCreateProjectModal: () => void
 }
 
-export const useProjectModal = create<useProjectModalStore>((set) => ({
+export const useProjectModal = create<useProjectModalStore>((set: any) => ({
   isCreateProjectModalOpen: false,
   openCreateProjectModal: () => set({ isCreateProjectModalOpen: true }),
   closeCreateProjectModal: () => set({ isCreateProjectModalOpen: false }),

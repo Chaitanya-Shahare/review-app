@@ -6,7 +6,7 @@ interface useCreateFormModalStore {
   closeCreateFormModal: () => void
 }
 
-export const useCreateFormModal = create<useCreateFormModalStore>((set) => ({
+export const useCreateFormModal = create<useCreateFormModalStore>((set: any) => ({
   isCreateFormModalOpen: false,
   openCreateFormModal: () => set({ isCreateFormModalOpen: true }),
   closeCreateFormModal: () => set({ isCreateFormModalOpen: false }),
