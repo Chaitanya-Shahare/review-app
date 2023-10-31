@@ -93,7 +93,7 @@ const SignInPage: NextPage = () => {
                 <FormField
                   control={form.control}
                   name="email"
-                  render={({ field }) => (
+                  render={({ field }: {field: {}}) => (
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
@@ -110,7 +110,7 @@ const SignInPage: NextPage = () => {
                 <FormField
                   control={form.control}
                   name="password"
-                  render={({ field }) => (
+                  render={({ field }: {field: {}}) => (
                     <FormItem>
                       <FormLabel>Password</FormLabel>
                       <FormControl>
